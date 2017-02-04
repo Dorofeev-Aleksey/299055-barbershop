@@ -3,7 +3,7 @@ body{
   line-height: 24px;
   color: #000000;
   font-weight: normal;
-  font-family: "PTSans NarrowBold", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 h1{
@@ -11,7 +11,7 @@ h1{
   line-height: 42px;
   color: #000000;
   font-weight: bold;
-  font-family: "PTSans NarrowBold", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 h3{
@@ -19,7 +19,7 @@ h3{
   line-height: 18px;
   color: #000000;
   font-weight: bold;
-  font-family: "PTSans NarrowBold", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .clearfix::after{
@@ -37,34 +37,95 @@ h3{
 .main-nav{
   width: 640px;
   float: left;
+  margin-top: 25px;
+  margin-left: -60px;
 }
 
 .user-block{
-  width: 100px;
+  width: 50px;
   float: right;
+  line-height: 70px;
+  margin-right: 0px;
+  padding-left: 30px;
+  background: url(../img/.icon-login.png) no-repeat center left;
+}
+
+.user-block a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
 }
 
 .main-page{
   width: 150px;
   float: left;
+  line-height: 70px;
+  margin-left: 20px;
 }
 
 .main-header{
   background-color: black;
-  margin-bottom: 50px;
+  min-height: 70px;
+}
+
+.main-page img{
+  vertical-align: middle;
 }
 
 ul.main-nav li{
-  display: inline;
+  display: inline-block;
+  margin-right: 5px;
 }
 
+ul.main-nav li a{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+ul.main-nav li a:hover{
+  box-shadow: 0 33px 0px -18px white;
+}
 main h1{
   margin-bottom: 30px;
+}
+
+main{
+  background-color: #f8f5f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content-box{
+  margin-top: -25px;
+}
+
+.content-box h1{
+  text-transform: uppercase;
+}
+
+.breadcrumbs{
+  margin-left: -40px;
+  margin-top: -20px;
 }
 
 .breadcrumbs li{
   display: inline;
   padding-right: 0;
+  margin-right: 35px;
+}
+
+.breadcrumbs li a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
 }
 
 .photo{
@@ -106,8 +167,9 @@ main h1{
 }
 
 .main-footer{
-  background-color: #242424; 
-  margin-top: 55px;
+  margin-top: 0px;
+  min-height: 190px;
+  background-image: url("../img/Footer_background.jpg")
 }
 
 .footer-contact{
@@ -156,22 +218,96 @@ table td{
 .filters{
   width: 220px;
   float: left;
+  margin-top: 15px;
+}
+
+.filters h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.manufacturer-filters label{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.manufacturer-filters{
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.product-group{
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.product-group label{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.btn{
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .gallery-products{
   width: 700px;
   float: right;
-}
-
-.btn-page{
-  clear: both;
+  margin-top: 40px;
+  margin-bottom: 35px;
 }
 
 .products-card{
   width: 220px;
   float: left;
-  outline: 1px solid black;
-  min-height: 285px;
+  min-height: 290px;
+  background-color: white;
+  box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.product{
+  padding-bottom: 10px;
+}
+
+.products-card h3{
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.price span{
+  margin-left: 15px;
+  background-color: #e5e5e5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: -3px;
+}
+
+.price a{
+  text-decoration: none;
+  padding: 15px;
+  padding-left: 20px;
+}
+
+.products-card h3 a{
+  color: black;
 }
 
 .products-card:not(:nth-child(3)):not(:nth-child(6)) {
@@ -183,11 +319,100 @@ table td{
 }
 
 .btn-page a{
-  padding: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 17px;
+  padding-right: 17px;
   border: 1px solid black;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin-right: 5px;
 }
 
 .btn-page{
-  margin-top: 45px;
+  margin-top: 80px;
   margin-left: 240px;
+  clear: both;
+
 }
+
+
+.price .btn{
+  padding-left: 18px;
+  padding-right: 18px; 
+}
+
+.footer-contact{
+  margin-top: 60px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer-contact a{
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer-social{
+  margin-top: 45px;
+}
+
+.footer-social h3{
+  color: white;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.social-btn-vk{
+  background: url(../img/vk.png) 50% 50% no-repeat;
+}
+
+.social-btn-fb{
+  background: url(../img/fb.png) 50% 50% no-repeat;
+}
+
+.social-btn-inst{
+  background: url(../img/inst.png) 50% 50% no-repeat;
+}
+
+.social-btn{
+  padding: 12px 22px;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.footer-copyright{
+  margin-top: 60px;
+}
+
+.footer-copyright h3{
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+.footer-copyright a{
+  color: white;
+  text-decoration: none;
+  padding: 13px 25px;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.footer-social .social-btn span{
+  display: none;
+}
+
+
+
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url(../fonts/PT_Sans_Narrow.ttf); /* Путь к файлу со шрифтом */
+  font-weight: normal; /* "вес шрифта", который соответствует начертанию */
+  font-style: normal;
+
+
