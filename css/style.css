@@ -130,18 +130,29 @@ main{
 
 .photo{
   width: 460px;
-  padding: 0 10px;
+  padding: 0 0px;
   float: left;
+  margin-top: 30px;
 }
 
 .item-details{
   width: 390px;
   padding: 0 10px;
   float: right;
+  margin-top: 30px;
+  text-transform: uppercase;
 }
 
 .photo img{
   float: left;
+  margin: 0;
+  width: 100%
+  height: 100%;
+  box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.photo img:nth-child(1){
+  margin-bottom: 20px
 }
 
 .photo img:nth-child(2){
@@ -157,9 +168,46 @@ main{
   float: left;
 }
 
+.item-description{
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
 .vendor-code{
   width: 150px;
   float: right;
+  text-align: right;
+  padding-right: 10px;
+  color: #cdcbca;
+}
+
+.composition{
+  margin-top: 38px;
+}
+
+.composition li{
+  list-style-type: none;
+  position: relative;
+  margin-left: -25px;
+}
+
+.composition li::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 5px;
+  height: 5px;
+  outline: 1px solid black;
+  transform: rotate(45deg); 
+  left: -15px;
+  top: 8px;
+}
+.item-details .price{
+  margin-left: -15px;
+}
+
+.price + h3{
+  margin-top: 65px;
 }
 
 .box-info{
@@ -227,11 +275,100 @@ table td{
   line-height: 30px;
 }
 
+.manufacturer-filters{
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+
+.product-group{
+  margin-bottom: 20px;
+}
+
+.manufacturer-filters input[type="checkbox"] {
+    display:none;
+}
+
+.manufacturer-filters input[type="checkbox"] + label{
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.manufacturer-filters input[type="checkbox"] + label::before{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border: 2px solid #000000;
+  top: 0;
+  left: 0;
+  background-color: #f9f6f3;
+}
+
+.manufacturer-filters input[type="checkbox"]:checked + label::after{
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: url(../img/cross_checkbox.png) no-repeat; 
+}
+
+.manufacturer-filters .label{
+  margin-left: 40px;
+}
 .manufacturer-filters label{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
+}
+
+.product-group{
+  margin-top: 30px
+}
+
+.product-group input[type="checkbox"] {
+    display:none;
+}
+
+.product-group input[type="checkbox"] + label{
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.product-group input[type="checkbox"] + label::before{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-color: #f9f6f3;
+}
+
+.product-group  input[type="checkbox"]:checked + label::after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 6px;
+  left: 6px;
 }
 
 .manufacturer-filters{
@@ -406,8 +543,20 @@ table td{
   display: none;
 }
 
+.breadcrumbs li a::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  top: 180px;
+  margin-left: 12px;
+  transform: rotate(45deg) scale(0.5);
+}
 
-
+.breadcrumbs li:last-child a::after{
+  display: none;
+}
 
 @font-face {
   font-family: "PT Sans Narrow";
