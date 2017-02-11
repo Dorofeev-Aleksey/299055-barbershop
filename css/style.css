@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url(../fonts/PT_Sans_Narrow.ttf);
+  font-weight: normal; 
+  font-style: normal;
+}
+
 body{
   font-size: 14px;
   line-height: 24px;
@@ -148,7 +155,7 @@ main{
 .photo img{
   float: left;
   margin: 0;
-  width: 100%
+  width: 100%;
   height: 100%;
   box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.2);
 }
@@ -522,6 +529,7 @@ table td{
   margin-right: 5px;
 }
 
+
 .footer-copyright{
   margin-top: 60px;
 }
@@ -560,10 +568,5 @@ table td{
   display: none;
 }
 
-@font-face {
-  font-family: "PT Sans Narrow";
-  src: url(../fonts/PT_Sans_Narrow.ttf);
-  font-weight: normal; 
-  font-style: normal;
-}
+
 
