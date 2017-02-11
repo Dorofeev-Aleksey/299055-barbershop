@@ -4,6 +4,7 @@ body{
   color: #000000;
   font-weight: normal;
   font-family: "PT Sans Narrow", sans-serif;
+  margin: 0;
 }
 
 h1{
@@ -126,6 +127,7 @@ main{
   font-size: 14px;
   line-height: 20px;
   font-weight: bold;
+  position: relative;
 }
 
 .photo{
@@ -549,7 +551,7 @@ table td{
   width: 15px;
   height: 15px;
   background-color: black;
-  top: 180px;
+  top: 0px;
   margin-left: 12px;
   transform: rotate(45deg) scale(0.5);
 }
@@ -560,8 +562,8 @@ table td{
 
 @font-face {
   font-family: "PT Sans Narrow";
-  src: url(../fonts/PT_Sans_Narrow.ttf); /* Путь к файлу со шрифтом */
-  font-weight: normal; /* "вес шрифта", который соответствует начертанию */
+  src: url(../fonts/PT_Sans_Narrow.ttf);
+  font-weight: normal; 
   font-style: normal;
-
+}
 
